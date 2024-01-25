@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- activity_main.xml - Layout for the main activity -->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<!-- Chat ListView -->
+<ListView
+    android:id="@+id/chatListView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="16dp"
+    android:padding="16dp"
+    android:transcriptMode="alwaysScroll"
+    android:stackFromBottom="true"/>
+
+<!-- Message Input Field -->
+<EditText
+    android:id="@+id/messageEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="16dp"
+    android:background="@drawable/edit_text_background"
+    android:hint="Type a message"
+    android:padding="8dp"/>
+
+<!-- Send Button -->
+<Button
+    android:id="@+id/sendButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/messageEditText"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/button_background"
+    android:text="Send"
+    android:textColor="@android:color/white"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"/>
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
